@@ -9,6 +9,10 @@
     top: -2px;
 }
 
+.ui-content{
+    margin: 0;
+}
+
 .err {
     color: red;
 }
@@ -143,4 +147,12 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
+}
+
+
+
+/*READER RSS*/
+
+iframe{
+    margin: -15px;
 }
