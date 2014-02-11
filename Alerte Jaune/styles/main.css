@@ -1,158 +1,74 @@
-.ui-footer {
-    text-align: center;
-    padding: 0.3em;
+*{
+    font-family: "Segoe UI", Helvetica, Verdana;
+    text-shadow: none;
+    border-radius: 0;
 }
 
-.ui-footer > .footerText {
-    font-size: 0.8em;
-    position: relative;
-    top: -2px;
-}
-
-.ui-content{
-    margin: 0;
-}
-
-.err {
-    color: red;
-}
-
-.buttons {
-    text-align: center;
-}
-
-.left {
-    float: left;
-    display: inline-block;
-}
-
-.right {
-    float: right;
-    display: inline-block;
-}
-
-.clear {
-    clear: both;
-}
-
-/* MAP STYLES*/
-#page-location-content {
-    position: absolute;
-    top: 42px;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    padding: 0;
-}
-
-#page-location-content .ui-input-search,
-#page-location-content div.ui-input-text {
-    margin: 0 10px;
-    padding: 0;
-    background-image: none;
-    position: relative;
-    border: none;
-}
-
-#map-canvas {
-    width: 100%;
+html,body{
+    overflow: hidden;
     height: 100%;
 }
 
-#map-search-wrap {
+table{
     width: 100%;
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 3px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
-#map-address {
-    min-width: 200px;
-    width: 60%;
-    margin: 5px;
-    float: left;
-    background-color: #fff;
-    font-style: italic;
-    color: #000;
-    padding: 7px 10px;
-    border-radius: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(180, 180, 180);
-    border-bottom-color: rgb(255, 255, 255);
-    box-shadow: 0 -1px 0 #3C3C3C;
+td {
+    text-align: center;
 }
 
-#map-search {
-    float: left;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    border: none;
-    background: none;
-    background-image: url(../styles/images/search.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-top: 4px;
+td#icon-actus{
+    background: #e51400 url('images/actus.png') no-repeat center;
 }
 
-#map-search:active {
-    background-image: url(../styles/images/search_active.png);
-    background-repeat: no-repeat;
+td#icon-actus:hover{
+    background-color:#ff4430;
 }
 
-#map-navigate-home {
-    float: left;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    border: none;
-    background: none;
-    background-image: url(../styles/images/location.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-top: 4px;
+td#icon-monenfant{
+    background: #1ba1e2 url('images/monenfant.png') no-repeat center;
 }
 
-#map-navigate-home:active {
-    background-image: url(../styles/images/location_active.png);
-    background-repeat: no-repeat;
+td#icon-monenfant:hover{
+    background-color:#5BE1FF;
 }
 
-/* RETINA DISPLAY STYLES*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-    #map-search {
-        background-image: url(../styles/images/search2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-search:active {
-        background-image: url(../styles/images/search_active2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-navigate-home {
-        background-image: url(../styles/images/location2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-navigate-home:active {
-        background-image: url(../styles/images/location_active2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+td#icon-amfe{
+    background: #60a917 url('images/amfe.png') no-repeat center;
 }
 
+td#icon-amfe:hover{
+    background-color:#90D947;
+}
 
+td#icon-depister{
+    background: #f0a30a url('images/depister.png') no-repeat center;
+}
 
-/*READER RSS*/
+td#icon-depister:hover{
+    background-color:#FFC32A;
+}
 
-iframe{
-    margin: -15px;
+td#icon-accompagner{
+    background: #9a165a url('images/accompagner.png') no-repeat center;
+}
+
+td#icon-accompagner:hover{
+    background-color:#CA468A;
+}
+
+h5.ui-li-heading{
+    white-space: normal;
+}
+
+/*RSS READER*/
+
+div#test{
+    padding:2px;
+    overflow: hidden;
+    width: inherit;
+}
+
+div.rssBody ul.ui-listview{
+    margin: 0;
 }

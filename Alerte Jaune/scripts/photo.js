@@ -40,16 +40,16 @@ function onPhotoURISuccess(imageURI) {
 
   // Get image handle
   //
-  var largeImage = document.getElementById('largeImage');
+  var smallImage = document.getElementById('smallImage');
 
   // Unhide image elements
   //
-  largeImage.style.display = 'block';
+  smallImage.style.display = 'block';
 
   // Show the captured photo
   // The in-line CSS rules are used to resize the image
   //
-  largeImage.src = imageURI;
+  smallImage.src = imageURI;
 }
 
 // A button will call this function
@@ -80,5 +80,5 @@ function getPhoto(source) {
 // Called if something bad happens.
 //
 function onFail(message) {
-  alert('Failed because: ' + message);
+  //alert('Failed because: ' + message);
 }

@@ -2,17 +2,17 @@
 
 .ui-bar-a
 {
-    border: 1px solid #333;
-    background: #111;
+    border: 1px solid #f4b710;
+    background: #f4b710;
     color: #fff;
     font-weight: 700;
-    text-shadow: 0 -1px 0 #000;
+    /*text-shadow: 0 -1px 0 #000;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#111));
     background-image: -webkit-linear-gradient(#3c3c3c, #111);
     background-image: -moz-linear-gradient(#3c3c3c, #111);
     background-image: -ms-linear-gradient(#3c3c3c, #111);
     background-image: -o-linear-gradient(#3c3c3c, #111);
-    background-image: linear-gradient(#3c3c3c, #111)
+    background-image: linear-gradient(#3c3c3c, #111)*/
 }
 
 .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button
@@ -145,6 +145,8 @@
     font-family:Helvetica,Arial,sans-serif;
     text-decoration:none}
 
+
+/*-----------------------------------B-----------------------*/
 .ui-bar-b{
     border:1px solid #456f9a;
     background:#5e87b0;color:#fff;

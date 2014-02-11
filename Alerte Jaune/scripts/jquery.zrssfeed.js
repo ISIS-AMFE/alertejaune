@@ -126,13 +126,13 @@
 		
 		// Add header if required
 		if (options.header)
-			html +=	'<div class="rssHeader">' +
-				'<a href="'+feeds.link+'" title="'+ feeds.description +'">'+ feeds.title +'</a>' +
+			html +=	'<div class="rssHeader" data-theme="e">' +
+				'<h2><a href="'+feeds.link+'" title="'+ feeds.description +'">Actus</a></h2>' +
 				'</div>';
 			
 		// Add body
-		html += '<div class="rssBody">' +
-			'<ul>';
+		html += '<div class="rssBody" data-role="content" style="padding:0;">' +
+			'<ul data-role="listview" class="ui-listview">';
 
 
 		// Add feeds
@@ -186,7 +186,7 @@
 			if (options.linkredirect) feedLink = encodeURIComponent(feedLink);
 			rowArray[rowIndex]['html'] = '<'+ options.titletag +'><a href="'+ options.linkredirect + feedLink +'" title="View this feed at '+ feeds.title +'">'+ entry.title +'</a></'+ options.titletag +'>'
 
-			if (options.date && pubDate) rowArray[rowIndex]['html'] += '<div>'+ pubDate +'</div>'
+			if (options.date && pubDate) rowArray[rowIndex]['html'] += '<p>'+ pubDate +'</p>'
 			if (options.content) {
 			
 				// Use feed snippet if available and optioned
@@ -200,7 +200,7 @@
 					content = '<a href="'+ options.linkredirect + feedLink +'" title="View this feed at '+ feeds.title +'">'+ content +'</a>'
 				}
 				
-				rowArray[rowIndex]['html'] += '<p>'+ content +'</p>'
+				rowArray[rowIndex]['html'] += '<p style="text-overflow:initial;">'+ content +'</p>'
 			}
 			
 			// Add any media
